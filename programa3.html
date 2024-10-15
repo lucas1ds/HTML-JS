@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pontuação de Time</title>
+</head>
+<body>
+    <script>
+        function pulaLinha(){
+            document.write ('<br><br>')
+        }
+        function mostra(texto){
+            document.write(texto)
+            pulaLinha()
+        }
+        mostra('Número de pontos do meu time na LaLiga')
+
+        let nomeTime = prompt('Qual o nome do seu time?')
+        let vitorias = prompt('Quantas vitórias o seu time obteve durante o campeonato?')
+        let empates = prompt('Qunantos empates o seu time teve?')
+        let derrotas = prompt('Quantos vezes seu time perdeu?')
+
+        let pontuacao = parseInt(vitorias * 3) + parseInt(empates)
+
+        mostra(`O ${nomeTime} obteve um total de ${pontuacao} pontos`)
+
+        if(pontuacao > 80){
+            mostra('Parabéns, seu time irá participar da ChampionsLeague')
+        }
+        else if(pontuacao < 20){
+            mostra('Infelizmente seu time foi rebaixado para a LaLiga2')
+        }
+        else {
+            mostra('Seu time permaneçe na LaLiga')
+        }
+    </script>
+</body>
+</html>
