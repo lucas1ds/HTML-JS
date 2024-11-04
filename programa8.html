@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pr-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +8,10 @@
 </head>
 <body>
     <script>
-         function pulaLinha(){
-            document.write ('<br><br>')
+        function pulaLinha(){
+            document.write('<br><br>')
         }
+
         function mostra(texto){
             document.write(texto)
             pulaLinha()
@@ -18,19 +19,17 @@
 
         let materia = prompt('Qual a matéria você quer saber a média?')
 
-        let trimestre = parseInt(prompt('Digite a quantidade de trimestre que você fez:'))
+        let trimestre = parseInt(prompt('Digite a quantidade de trimestres que você fez: '))
 
         let totalNotas = 0
 
         for(let contador = 1; contador <= trimestre; contador++){
-            let nota = parseInt(prompt('Qual a sua nota?'))
+            let nota = parseInt(prompt('Qual a sua nota ? '))
             totalNotas = totalNotas + nota
-
         }
 
         let media = totalNotas/trimestre
         mostra(media)
-
 
     </script>
 </body>
