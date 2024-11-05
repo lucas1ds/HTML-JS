@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --fonte-titulo:"Oswald", sans-serif;
+    --fonte-texto:"Playfair Display", serif;
+
+
+    --cor1: #dcdcddff;
+    --cor2: #c5c3c6ff;
+    --cor3: #46494cff;
+    --cor4: #4c5c68ff;
+    --cor5: #1985a1ff;
+    --cor6: #f1f1f1;
+    --cor7: #00000000;
+}
+
+body{
+    background-color: var(--cor4);
+    font-family: var(--fonte-texto);
+}
+header, footer{
+    background-color: var(--cor3);
+    padding: 2em;
+    color: var(--cor6);
+    text-align: center;
+    font-family: var(--fonte-titulo);
+    font-size: 1.5em;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+footer a{
+    text-decoration: none;
+    color: var(--cor5);
+}
